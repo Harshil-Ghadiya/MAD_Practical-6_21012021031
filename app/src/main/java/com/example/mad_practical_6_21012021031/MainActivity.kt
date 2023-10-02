@@ -10,20 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        fun playbtn() {
-            Intent(applicationContext, MyService::class.java).putExtra(
-                MyService.PLAYERKEY,
-                MyService.PLAYERVALUE
-            ).apply { startService(this) }
-        }
-
-        fun stopbtn() {
-            Intent(applicationContext, MyService::class.java).putExtra(
-                MyService.PLAYERKEY,
-                MyService.PLAYERVALUE
-            ).apply { stopService(this) }
-
-        }
     }}
 
 
